@@ -12,8 +12,17 @@ COMANDOS LINUX:
 Cd : acessa arquivos, diretórios.
 ls: lista o que está nas pastas ou diretórios.
 Mkdir: Cria arquivos ou diretórios ou arquivos
-Rm -rf: apaga diretórios
+Rm -rf: apaga diretórios	
 
 TÓPICOS FUNDAMENTAIS
 SHA1 (Secure Hash Algorithm) é um conjunto de funções hash criptográficas projetadas pela NSA.  Gera um conjunto de e caracteres identificador de 40 dígitos, que é único. 
 Entendendo como o SHA1 trabalha. Passando o arquivo para o algoritmo de encriptação com o comando openssl sha1 no arquivo original e no alterado, veja que a cada alteração a encriptação muda, fato que garante a segurança
+
+O Git roda o SHA1 para objetos internos também. 
+OBJETOS INTERNOS DO GIT
+BLOBS, TREES e COMMITS são os três objetos básicos do Git responsáveis pelo versionamento de código. 
+BLOBS (bolhas) : Eles contêm metadados do Git, ou seja, o tipo do objeto, o tamanho da string, o tamanho do arquivo, entre outros. 
+TREE (árvores): Elas armazenam BLOBS, ela contém as BLOBS. É uma crescente. As BLOBS são os componentes básicos da composição, e a TREE armazena e aponta para tipos de BLOBS diferentes. Ela contém também metadados, aponta para um BLOB, e guarda o nome do arquivo, diferentemente da BLOBS. 
+
+COMMIT: É o objeto mais importante de todos, é ele quem dá sentido para a alteração que está sendo feita. Ele aponta para uma TREE, e para os BLOBS. 
+O GIT é um SISTEMA SEGURO e DISTRIBUIDO
