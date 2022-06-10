@@ -1,0 +1,19 @@
+2 – INTRODUÇÃO AO GIT E AO GITHUB
+
+COMANDOS WINDOWS:
+
+Cd : acessa arquivos, diretórios.
+Dir: lista o que está nas pastas ou diretórios.
+Mkdir: Cria arquivos ou diretórios ou arquivos
+Del: apaga conteúdos 
+Rmdir: apaga diretórios.
+
+COMANDOS LINUX:
+Cd : acessa arquivos, diretórios.
+ls: lista o que está nas pastas ou diretórios.
+Mkdir: Cria arquivos ou diretórios ou arquivos
+Rm -rf: apaga diretórios
+
+TÓPICOS FUNDAMENTAIS
+SHA1 (Secure Hash Algorithm) é um conjunto de funções hash criptográficas projetadas pela NSA.  Gera um conjunto de e caracteres identificador de 40 dígitos, que é único. 
+Entendendo como o SHA1 trabalha. Passando o arquivo para o algoritmo de encriptação com o comando openssl sha1 no arquivo original e no alterado, veja que a cada alteração a encriptação muda, fato que garante a segurança
