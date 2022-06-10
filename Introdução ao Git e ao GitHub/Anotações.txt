@@ -26,3 +26,31 @@ TREE (árvores): Elas armazenam BLOBS, ela contém as BLOBS. É uma crescente. A
 
 COMMIT: É o objeto mais importante de todos, é ele quem dá sentido para a alteração que está sendo feita. Ele aponta para uma TREE, e para os BLOBS. 
 O GIT é um SISTEMA SEGURO e DISTRIBUIDO
+
+Mais alguns códigos do Git
+
+git reflog // mostra o histórico das versões adicionadas.
+
+git resest --hard "id da versão" // para retornar a uma versão correta em caso de erros no percurso.
+
+git branch staging //criando uma nova branch. O nome staging é só um exemplo. Geralmente usa-se mais de uma branch para trabalhar, mais estável,
+			uma principal são colocados apenas códigos bons, e outras paralelas para códigos em produção. 
+
+git checkout staging // saindo da branch atual e indo para a nova branch para fazer alterações e etc... toda modificação será feita nela agora.
+
+// para passar os códigos da branch paralela para a principal, deve-se:
+
+git checkout main // entrar na branch printcipal.
+git pull// antes de mergear, trazer as atualizações que estão no git hub para a máquina local, isso evita que o merge seja feito para algo desatualizado.
+git merge staging // mergeando, puxando os códigos da branch paralela para a principal.
+git push // para passrar do pc para o git hub.
+
+git checkout - b "nova branch" main // criando uma outra branch com base em uma branch já existente (brach main), e entrando na nova branch.
+ 
+
+// caso seja necessário submeter o código da branch paralela à aprovação de alguém, devemos após aletar o código, deve-se:
+
+git add . // para add a nova alteração.
+git commit -m "nome da alteração" // dando um nome para a alteração.
+git push //enviar a aletaração e copiar o comando que surgirá na tela, colar e enviar novamente como na próxima linha.
+git push --set-upstream origin nova_branch_teste
